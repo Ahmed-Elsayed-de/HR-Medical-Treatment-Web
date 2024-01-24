@@ -1,0 +1,162 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="MT.master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title></title>
+    <script language="javascript" type="text/javascript" src="../MSGScripts.js"></script>
+       <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/SiteStyleSheet.css" rel="stylesheet" type="text/css" />   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            direction: rtl;
+        }
+        .style3
+        {
+            width: 100%;
+        }
+        .style6
+        {
+            width: 538px;
+            height: 26px;
+        }
+        .style4
+        {
+            display: block;
+            float: left;
+            text-align: right;
+            width: 694px;
+            height: 49px;
+            font-size: small;
+        }
+        .style7
+        {
+            width: 87px;
+            height: 83px;
+        }
+        .style2
+        {
+            width: 88px;
+            height: 26px;
+        }
+        .style9
+        {
+            text-align: right;
+        }
+        .style11
+        {
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div class="loginDisplay">
+                <table class="style3">
+                    <tr>
+                        <td class="style6">
+            <div class="style4">
+                <address class="style11">
+                    برنامج 
+                    العلاج الطبي ـ شركة إسكندرية للصيانة البترولية (بترومنت) والله الموفق
+                </address>
+            </div>
+                        </td>
+                        <td class="style2">
+                            <img alt="Apm" class="style7" src="../Images/logo.png" /></td>
+                        <td class="style2">            
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                    <center>
+                 
+                        <a href="~/Account/Login.aspx" ID="HeadLoginStatus0" runat="server">تسجيل 
+                        الدخول&nbsp; </a> 
+                           </center>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                    <center>
+                    
+                 
+                         <br/><span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span> 
+                        <br />
+                          <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="تسجيل الخروج" LogoutPageUrl="~/Account/Login.aspx"/>  
+                     </center>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear hideSkiplink" dir="rtl">
+                <asp:Panel ID="Panel1" runat="server" Direction="RightToLeft">
+                    <div class="style9">
+                        <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+    EnableViewState="False" IncludeStyleBlock="False" Orientation="Horizontal" Height="20px" 
+                        Width="547px">
+                            <Items>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtHome.aspx" Text="الرئيسية" 
+                                    Value="الرئيسية"></asp:MenuItem>
+                                <asp:MenuItem 
+                            Text="جواب جديد" Value="جواب جديد" NavigateUrl="~/Pages/MtNewTickets.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtTickets.aspx" Text="تعديل الخطابات" 
+                                    Value="تعديل الخطابات"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtTicketsByID.aspx" Text="المطالبات" 
+                                    Value="المطالبات"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtEmployeeData.aspx" Text="بيانات الموظف" 
+                                    Value="بيانات الموظف"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtContractors.aspx" Text="الجهات الطبية " 
+                                    Value="الجهات الطبية "></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtItems.aspx" Text="البنود " Value="البنود ">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtRules.aspx" Text="لائحة العلاج " 
+                                    Value="لائحة العلاج "></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Account/ChangePassword.aspx" 
+                                    Text="تغيير كلمة المرور" Value="تغيير كلمة المرور"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Pages/MtSearch.aspx" Text="بحث بالاسم" 
+                                    Value="بحث بالاسم"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </div>
+                    <div style="style4">
+                    <center>
+                     <asp:Label ID="lblError" runat="server" ForeColor="Red" Visible="False"></asp:Label>
+                    </center>                        
+                    </div>                 
+                </asp:Panel>
+            </div>
+        </div>
+           <div style="background-color:#E6EEFC;width:100%;">
+                      <center>
+                         <h1>
+                          <asp:SiteMapPath ID="SiteMapPath2" runat="server">
+                            </asp:SiteMapPath>
+                         </h1>  
+                        </center>
+                    </div>
+        <div class="main" dir="rtl">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear" dir="rtl">
+        </div>
+    </div>
+       <div  id="footer">     
+     <p><font  style="font-size:small;font-family:Tahoma;" >Copyrights to Petromint © 2013.<br />
+        Designed By Management Information Systems <br />
+        صمم بواسطة أدارة نظم المعلومات الادارية<br />
+        All rights reserved.</font></p>
+	 
+    </div>
+    </form>
+  </body>
+</html>

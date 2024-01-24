@@ -1,0 +1,103 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="LoginMT.master.vb" Inherits="LoginMt" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <script language="javascript" src="../MSGScripts.js"></script>
+       <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/SiteStyleSheet.css" rel="stylesheet" type="text/css" />   
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            direction: rtl;
+        }
+        .style3
+        {
+            width: 100%;
+        }
+        .style6
+        {
+            width: 538px;
+            height: 26px;
+        }
+        .style4
+        {
+            display: block;
+            float: left;
+            text-align: right;
+            width: 694px;
+            height: 49px;
+            font-size: small;
+        }
+        .style7
+        {
+            width: 87px;
+            height: 83px;
+        }
+        .style2
+        {
+            width: 88px;
+            height: 26px;
+        }
+        .style9
+        {
+            text-align: right;
+        }
+        .style11
+        {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div class="loginDisplay">
+                <table class="style3">
+                    <tr>
+                        <td class="style6">
+            <div class="style4">
+                <address class="style11">
+                    برنامج 
+                    العلاج الطبي ـ شركة إسكندرية للصيانة البترولية (بترومنت) والله الموفق
+                </address>
+            </div>
+                        </td>
+                        <td class="style2">
+                            <img alt="Apm" class="style7" src="../Images/logo.png" /></td>
+                        <td class="style2"> 
+                            &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="clear hideSkiplink" dir="rtl">
+                <asp:Panel ID="Panel1" runat="server" Direction="RightToLeft">
+                    <div class="style9">
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+        <div class="main" dir="rtl">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear" dir="rtl">
+        </div>
+    </div>
+        <div  id="footer">     
+     <p><font  style="font-size:small;font-family:Tahoma;" >Copyrights to Petromint © 2013.<br />
+        Designed By Management Information Systems <br />
+        صمم بواسطة أدارة نظم المعلومات الادارية<br />
+        All rights reserved.</font></p>
+	 
+    </div>
+    </form>
+   
+</body>
+</html>

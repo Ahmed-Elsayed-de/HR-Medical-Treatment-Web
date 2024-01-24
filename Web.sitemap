@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  
+    <siteMapNode url="~\Pages\MtHome.aspx" title="الرئيسية"  description="">      
+        <siteMapNode url="~\Pages\Error.aspx" title="خطأ"  description="" />
+      <siteMapNode url="~\Pages\MtContractors.aspx" title="الجهات الطبية"  description="" />
+      <siteMapNode url="~\Pages\MtEmployeeData.aspx" title="بيانات الموظف"  description="" />
+      <siteMapNode url="~\Pages\MtItems.aspx" title="البنود"  description="" />
+      <siteMapNode url="~\Pages\MtNewTickets.aspx" title="جواب جديد"  description="" />
+      <siteMapNode url="~\Pages\MtRules.aspx" title="لائحة العلاج"  description="" />
+      <siteMapNode url="~\Pages\MtSearch.aspx" title="بحث بالاسم"  description="" />
+      <siteMapNode url="~\Pages\MtTickets.aspx" title="تعديل الخطابات"  description="" />
+      <siteMapNode url="~\Pages\MtTicketsByID.aspx" title="المطالبات"  description="" />
+     <siteMapNode url="~\Account\ChangePassword.aspx" title="تغيير كلمة المرور"  description="" />   
+      <siteMapNode url="~\Pages\MtFamilyDataNew.aspx" title="بيانات عائلية"  description="" />
+
+    </siteMapNode>
+  
+</siteMap>
