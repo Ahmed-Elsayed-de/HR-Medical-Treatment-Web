@@ -511,5 +511,3 @@ Nine illustrative screenshots are provided in the `screenshots/` folder, coverin
 ### Repository
 [github.com/Ahmed-Elsayed-de/HR-Medical-Treatment-Web](https://github.com/Ahmed-Elsayed-de/HR-Medical-Treatment-Web)
 
-### Copyright
-© 2013 Petromaint — Designed by Management Information Systems. All rights reserved.
